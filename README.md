@@ -12,7 +12,7 @@ DateTimePicker holds a few helpers method to help you to add a date picker field
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'date_time_picker'
+gem 'date_time_picker', github: 'mr-dxdy/date_time_picker'
 ```
 
 ## Configuration
