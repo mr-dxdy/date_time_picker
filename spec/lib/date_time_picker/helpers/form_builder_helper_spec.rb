@@ -1,25 +1,6 @@
-require 'spec_helper'
-
-require 'active_model'
+require 'rails_helper'
 
 describe DateTimePicker::Helpers::FormBuilderHelper do
-  include ActionView::Helpers
-  include ActionView::Context
-
-  class Post < Struct.new(:id, :title, :date)
-    extend ActiveModel::Naming
-    include ActiveModel::Conversion
-    extend ActiveModel::Translation
-
-    def persisted?
-      id.present?
-    end
-  end
-
-  def protect_against_forgery?
-    false
-  end
-
   let(:date_time_format) { DateTimePicker.date_time_format }
   let(:date_format) { DateTimePicker.date_format }
 

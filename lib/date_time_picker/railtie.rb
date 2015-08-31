@@ -1,4 +1,10 @@
-require 'rails/railtie'
+require "active_support/inflector"
+require "active_support/core_ext/hash"
+
+require "rails/railtie"
+require "action_view"
+
+require "date_time_picker/helpers"
 
 module DateTimePicker
   class Railtie < Rails::Railtie

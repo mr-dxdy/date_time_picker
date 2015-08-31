@@ -1,11 +1,5 @@
-require "active_support/inflector"
-require "active_support/core_ext/object/try"
-require "active_support/core_ext/hash"
-require "action_view"
-
 require "date_time_picker/version"
 require "date_time_picker/formatter"
-require "date_time_picker/helpers"
 
 module DateTimePicker
   class << self

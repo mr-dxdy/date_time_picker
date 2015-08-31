@@ -1,8 +1,6 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe DateTimePicker::Helpers::FormHelper do
-  include ActionView::Helpers::FormHelper
-
   let(:object_name) { "post" }
   let(:method) { "description" }
   let(:value) { DateTime.now }

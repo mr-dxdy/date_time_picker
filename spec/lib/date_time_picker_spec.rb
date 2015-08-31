@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe DateTimePicker do
   subject { DateTimePicker }
@@ -8,17 +8,12 @@ describe DateTimePicker do
     let(:format) { '%d/%m/%Y' }
 
     it 'should be able to set formatter' do
-      formatter = Struct.new("Formatter") do
-        def call(value, format)
-          "#{value} #{format}"
-        end
-      end
-
-      subject.formatter = formatter.new
+      formatter = Dummy::Formatter.new
+      subject.formatter = formatter
 
       expect(
         subject.formatter.call(value, format)
-      ).to eq(formatter.new.call(value, format))
+      ).to eq(formatter.call(value, format))
     end
 
     it 'should be able to set date_format' do

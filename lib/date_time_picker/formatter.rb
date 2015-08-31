@@ -1,3 +1,5 @@
+require "active_support/core_ext/object/try"
+
 module DateTimePicker
   class Formatter
     def call(value, format)

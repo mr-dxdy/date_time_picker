@@ -1,8 +1,6 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe DateTimePicker::Helpers::FormTagHelper do
-  include ActionView::Helpers::FormTagHelper
-
   let(:value) { DateTime.now }
   let(:name) { :date }
 
