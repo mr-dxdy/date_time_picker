@@ -1,4 +1,4 @@
-# DateTimePicker
+# DateTimePicker (deprecated)
 
 DateTimePicker holds a few helpers method to help you to add a date picker field into your views, they are:
 
